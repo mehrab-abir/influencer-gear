@@ -49,6 +49,54 @@ header .container nav ul li a:hover{
   text-decoration: underline;
   cursor: pointer;
 }
+header .container .openSlide{
+  display: none;
+}
+
+/* side menu - in smaller device*/
+#side-nav{
+  width: 0px;
+  height: 100%;
+  background-color: #18191F;
+  position:fixed;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+  transition: 0.5s;
+}
+#side-nav span{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 150px;
+  cursor: pointer;
+}
+#side-nav ul{
+  list-style-type: none;
+  margin-left: 20px;
+}
+#side-nav ul li{
+  margin-top: 5px;
+}
+#side-nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+/*side menu switch button*/
+header .container .openSlide span{
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width:768px){
+  header .container .openSlide{
+    display: block;
+  }
+}
 
 /* banner css */
 .banner-content{

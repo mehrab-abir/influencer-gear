@@ -17,6 +17,16 @@
         <div class="container">
             <nav>
                 <h1 class="nav-logo">Influencer Purducts</h1>
+
+                <!-- side menu toggle button -->
+                <span class="openSlide">
+                    <a href="#" onclick="openSlideMenu();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </span>
+
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
@@ -42,6 +52,17 @@
         </div> <!--container ends-->
     </header>
     <!-- header ends -->
+
+    <!-- side menu -->
+    <div class="side-menu" id="side-nav">
+        <span class="menu-close-btn" onclick="closeSideMenu()">&times;</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+    </div>
 
     
     <main>
@@ -204,6 +225,8 @@
             <p>All rights reserved</p>
         </div>
      </footer>
+
+     <script src="script.js"></script>
 
 </body>
 </html>
