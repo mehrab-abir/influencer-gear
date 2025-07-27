@@ -39,6 +39,7 @@ header .container nav ul{
 header .container nav ul li{
   list-style: none;
   margin-left: 30px;
+  cursor: pointer;
 }
 header .container nav ul li a{
   text-decoration: none;
@@ -61,8 +62,8 @@ header .container nav ul li a:hover{
   grid-area: banner-img;
   background-image: url(../images/Circle-design.svg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
 }
 .banner-img img{
   max-width: 100%;
@@ -99,6 +100,8 @@ header .container .banner{
 .banner-content button{
   border-radius: 35px;
 }
+
+
 /* responsive- mobile device */
 @media screen and (max-width:576px){
   header .container nav ul{
@@ -125,7 +128,7 @@ header .container .banner{
     width: 80%;
   }
   .banner-img img{
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
 }
 
@@ -138,9 +141,6 @@ header .container .banner{
   }
   .banner-img img{
     transform: scale(1);
-  }
-  .banner-img img{
-   transform: translateY(10%);
   }
 }
 
