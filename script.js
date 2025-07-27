@@ -1,3 +1,4 @@
+// responsive menu functions
 function openSlideMenu(){
     document.getElementById("side-nav").style.width = "200px";
 }
